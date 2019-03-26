@@ -36,7 +36,7 @@ body {
 
 .blogpost{
   padding:2%;
-  background-color:rgba(1,1,1,.1);
+  background-color:rgba(0,0,0,.1);
   color:black;
 }
 
@@ -82,8 +82,18 @@ body {
     background-color:blueviolet;
     padding:2%;
     margin-left:2%; 
+
+    background: linear-gradient(132deg, #ec5218, #1665c1);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 30s ease infinite;
+
   }
 
+  @keyframes BackgroundGradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
 
 
   @charset "utf-8";
@@ -231,6 +241,7 @@ ul {
    
       
       <div class="col-12 col-md-3 about">
+       
     
           <div class="d-flex justify-content-center h-100">
             <div class="image_outer_container">
