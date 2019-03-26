@@ -17,219 +17,174 @@
   
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
-body {
+  * {  
   margin: 0;
   padding: 0;
-	overflow: hidden;
 }
 
-.menu {
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 10%;
-  padding: 0;
+body {
+  background-color: black;
+}
+
+#nav-bar {
+  margin: 50px;
+  max-width: 50px;
+  border: 1px solid #bed1df;
+  border-radius: 4%;
+  background-color: white;
+  -webkit-box-shadow: -2px 3px 2px 0px rgba(5, 0, 0, 0.11);
+  -moz-box-shadow:    -2px 3px 2px 0px rgba(5, 0, 0, 0.11);
+  box-shadow:         -2px 3px 2px 0px rgba(5, 0, 0, 0.11);
+}
+
+li {
+   color: #bed1df;
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 0.75em;
+   list-style: none;
+}
+
+li.level-one {
+  font-size: 1.5em;
   text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
- }
+  border-top: 1px solid #bed1df;
+  cursor: pointer;
+}
+
+li.level-one:first-child {
+  border-top: none;
+}
+
+li.level-one:hover {
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(233,238,242,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(233,238,242,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(233,238,242,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(233,238,242,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(233,238,242,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(233,238,242,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e9eef2', GradientType=0 );
+}
+
+#selected {
+  background: #3f8eb9;
+  -webkit-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.45);
+  -moz-box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.45);
+  box-shadow: inset 1px 1px 10px 1px rgba(0,0,0,0.45);
+}
+
+i {
+  color: #bed1df;
+  margin: 25%;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em; 
+  color: #bed1df;
+  margin: 50px;
+}
 
 a {
+  color: #3f8eb9;
   text-decoration: none;
 }
 
-.logo{
-  margin-top: -45%;
+.level-one {
+  position: relative;
 }
 
-.saja{
-  background-color: rgb(230, 127, 10);
-  color:whit;
-  padding:10px;
-}
-
-.menu i {
-  font-size: 32px;
-}
-
-.menu a {
-  margin: 30px 0;
-}
-
-.page {
+.level-two {
+  display: none;
   position: absolute;
-  height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+  height: 50px;
+  width: 100px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.65em; 
+  text-align: center;
 }
 
-#p1 {
-	width: 100%;
-	background: rgb(14, 1, 26);
-	left: 0;
+.level-two:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 9px 9px 9px 0;
+  border-color: transparent  #fff;
+  display: block;
+  width: 0;
+  z-index: 1;
+  left: -9px;
+  top: 15px;
 }
 
-#p2 {
-	background: tomato;
+.level-two li {
+  margin: 15px;
 }
 
-#p3 {
-	background: deeppink;
+.level-one:hover > .level-two {
+  display: block;
 }
 
-#p4 {
-	background: rebeccapurple;
+.level-two {
+  left: 130%;
+  top: 0;
 }
-
-#p2, #p3, #p4 {
-	width: 90%;
-  left: 10%;
-	transform: translateX(190%);
-}
-
-.menu a {
-  transition: all .5s ease-out;
-	color: #fff;
-}
-
-.menu a:hover {
-  opacity: 0.5;
-}
-
-.page {
-	font-family: 'Montserrat', sans-serif;
-	color: #fff;
-}
-
-.page i {
-	font-size: 80px;
-}
-
-.page h2 {
-	font-size: 36px;
-	line-height: 2;
-}
-
-.page span {
-	font-size: 17px;
-}
-
-.page {
-	transition: all .6s cubic-bezier(.5, .2, .2, 1.1); 
-}
-
-#t2:target #p2,
-#t3:target #p3,
-#t4:target #p4 {
-  transform: translateX(0%);
-  transition-delay: .4s !important;
-}
-
-#t2:target #p1, 
-#t3:target #p1,
-#t4:target #p1 {
-  background: black;
-	filter: blur(3px)
-}
-
-#t2:target .menu a,
-#t3:target .menu a,
-#t4:target .menu a {
-  transform: scale(.6);
-  transition-delay: .25s;
-}
-
-#t2:target .menu .two,
-#t3:target .menu .three,
-#t4:target .menu .four {
-  transform: scale(1.2);
-}
-
-.page span a {
-  color: yellow;
-  transition: all 250ms ease-out;
-}
-
-.page span a:hover {
-  color: #FFF;
-}
-
-.page .wrap {
-	width: 50%;
-  transform: translateX(200%);
-  transition: all .5s cubic-bezier(.25, 1, .5, 1.25);
-}
-
-.page#p1 .wrap {
-  transform: translateX(0%);
-}
-
-#t2:target .page#p2 .wrap,
-#t3:target .page#p3 .wrap,
-#t4:target .page#p4 .wrap {
-  transform: translateX(0);
-  transition-delay: 1s;
-}
-
 
   
   </style>
 </head>
 <body>
 
-
+  <head>
+    <meta charset="utf-8">
+    <title>Navigation Bar</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+    <ul id="nav-bar">
+      <li class="level-one" id="selected"><i class="fa fa-home"></i>
+        <ul class="level-two">
+          <li>Home<li/>
+        </ul>
+      </li> 
+      <li class="level-one"><i class="fa fa-beer"></i>
+        <ul class="level-two">
+          <li>Cheers!<li/>
+        </ul>
+      </li>
+          
+      <li class="level-one"><i class="fa fa-rocket"></i>
+        <ul class="level-two">
+          <li>Rocket!<li/>
+        </ul>
+      </li>
+          
+      <li class="level-one"><i class="fa fa-desktop"></i>
+        <ul class="level-two">
+          <li>Work!<li/>
+        </ul> 
+       </li>
+          
+      <li class="level-one"><i class="fa fa-print"></i>
+        <ul class="level-two">
+          <li>Print!<li/>
+        </ul>  
+      </li>
+         
+      <li class="level-one"><i class="fa fa-power-off"></i>
+        <ul class="level-two">
+          <li>Shut Down!<li/>
+        </ul> 
+      </li>
+         
+    </ul>
+   
+  </body>
   
 
-	<div id="t1">
-		<div id="t2">
-			<div id="t3">
-				<div id="t4">
-            
-					<div class="menu">
-              
-            <a href="#t1" class="one"><i class="fa fa-bug"></i></a>
-            <a href="#t2" class="two"><i class="fa fa-address-book"></i></a>
-            <a href="#t3" class="three"><i class="fas fa-thumbs-up"></i></a>
-            <a href="#t4" class="four"><i class="fas fa-bell"></i></a>
-          </div>
-					<div class="page" id="p1">
-						<div class="wrap">
-               <i class="fab fa-css3-alt"></i>
-               <div class="logo">
-                  <center><i class="fa fa-bug"></i><br><small><b>Ohmyarch.xyz</b></small></center>
-                  
-                    </div>
-							<br>
-							<p class="saja">if there is no logic create your own </p>
-						</div>
-          </div>
-          <div class="page" id="p2">
-						<div class="wrap">
-							<i class="fab fa-youtube"></i>
-							<h2>Pure CSS</h2>
-							<span><a href="https://www.youtube.com/channel/UC2Ew-ZAd02s_HG6sF08WXwg">This Channel</a> Provides tutorial based on pure CSS</span>
-						</div>
-          </div>  
-          <div class="page" id="p3">
-						<div class="wrap">
-							<i class="fas fa-thumbs-up"></i>
-							<h2>Please like this video</h2>
-						</div>
-          </div>
-          <div class="page" id="p4">
-						<div class="wrap">
-							<i class="fas fa-bell"></i>
-							<h2>And Subscribe</h2>
-						</div>
-          </div> 
-        </div>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
