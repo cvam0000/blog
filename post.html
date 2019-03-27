@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="cvam.css">
 
   <style>
-  ul{
+  body{
     background: linear-gradient(132deg, #ec5218, #1665c1);
   background-size: 400% 400%;
   animation: BackgroundGradient 30s ease infinite;
@@ -32,60 +32,35 @@
         
   <div class="container-fluid">
     <div class="row">
-
-      <div class="col-12 col-md-12">
+        <div class="col-12 col-md-4"></div>
+      <div class="col-12 col-md-3">
         <center>   <ul class="il">
 
-                <img width="175px"src="logo.png"><br><br>
+                <img width="50px"src="logo.png">
                 <li><a class="active" href="#home"><i class="fa fa-home" style="font-size:24px"></i></a></li>
                 <li><a href="#news"><i class="fa fa-code" style="font-size:24px"></i></a></li>
                 <li><a href="#contact"><i class="fa fa-address-book" style="font-size:24px"></i></a></li>
                 <li><a href="#about"><i class="fa fa-comments" style="font-size:24px"></i></a></li>
-                <li><a href="#about"><i class="fa fa-code-fork" style="font-size:24px"></i></a></li>
+               
                 
                 
               </ul></center>
               <br><br>
             </div>
-            <div class="col-12 col-md-3"></div>  
-            <div class="col-12 col-md-6">
-
-
-                
-
-                    <h2>Introduction to RTOS</h2>
-                    
-                    
-
-                    <p>   Distributions
-
-    FreeRTOS : FreeRTOS is a class of RTOS that is designed to be small enough to run on a microcontroller - although its use is not limited to microcontroller applications.
-
-    QNX : QNX is real time RTOS, which support ARM, MIPS, PowerPC, SH and X86 Processor family.
-
-    Vxworks :Vxworks is also real time rtos, it support wide range of processor architectures like ARM, PowerPC, ColdFire, MIPS etc.
-
-    RTlinux :RTLinux is a hard realtime real-time operating system (RTOS) microkernel that runs the entire Linux operating system as a fully preemptive process. The hard real-time property makes it possible to control robots, data acquisition systems, manufacturing plants, and other time-sensitive instruments and machines from RTLinux applications. Even with a similar name it is not related the Real-Time Linux project of the Linux Foundation.
-
-    ChibiOS/RT: is designed for embedded applications on 8, 16 and 32 bit microcontrollers; size and execution efficiency are the main project goals.[2] As reference, the kernel size can range from a minimum of 1.2 Kib up to a maximum of 5.5 KiB with all the subsystems activated on a STM32 Cortex-M3 processor. The kernel is capable of over 220,000 created/terminated threads per second and is able to perform a context switch in 1.2 microseconds on an STM32 @ 72 MHz. Similar metrics for all the supported platforms are included in the source distribution as test reports.
-        Efficient and portable preemptive kernel.
-        Best in class context switch performance.
-        Many supported architectures and platforms.
-        Static architecture, everything is statically allocated at compile time.
-        Dynamic extensions, dynamic objects are supported by an optional layer built on top of the static core.
-        Rich set of primitives: threads, virtual timers, semaphores, mutexes, condition variables, messages, mailboxes, event flags, queues.
-        Support for priority inheritance algorithm on mutexes.
-        Hardware Abstraction Layer (HAL) component supporting a variety of abstract device drivers: Port, Serial, ADC, CAN, EXT, GPT, I2C, ICU, MAC, MMC, PWM, RTC, SDC, SPI, UART, USB, USB-CDC.
-        Support for external components uIP, lwIP, FatFs.
-        Extensive test suite with benchmarks.
-        Support for C++ applications.
-
-github :https://github.com/ChibiOS/
-                   </p>
-
-
-            </div> 
-            <div class="col-12 col-md-3"></div> 
+           
+              
+              <!-- Page Content -->
+              <div class="container">
+                <div class="card border-0 shadow my-5">
+                  <div class="card-body p-5">
+                    <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
+                    <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
+                    <p class="lead">Scroll down...</p>
+                    <div style="height: 700px"></div>
+                    <p class="lead mb-0">You've reached the end!</p>
+                  </div>
+                </div>
+              </div>
                       
 
 
