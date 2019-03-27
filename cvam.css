@@ -31,7 +31,8 @@ body {
        	
        	margin-bottom: auto;
        	border-radius: 50%;
-       	position: relative;
+         position: relative;
+         width: 200px;
        }
 
       
@@ -40,10 +41,12 @@ body {
          margin-top:-100px;
        }
   .about{
-    background-color:blueviolet;
+    width:70%;
+    margin-top:5%;
     padding:2%;
     margin-left:2%; 
-  height:700px;
+    margin-right:2%;
+    height:700px;
   
   background: linear-gradient(132deg, #ec5218, #1665c1);
   background-size: 400% 400%;
