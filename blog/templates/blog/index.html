@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,16 +15,17 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <title>Ohmyarch</title>
   
+ 
 
-
-  <link rel="stylesheet" type="text/css" href="cvam.css">
+ 
+  <link rel="stylesheet" href="{% static 'css/cvam.css' %}">
 </head>
 <body>
 
   
 
 <br>
-    <center><img width="175px"src="logo.png"></center><br><br>
+    <center><img width="175px" src="{% static "images/logo.png" %}"> </center><br><br>
 
 <div class="container-fluid">
   <div class="row">
@@ -78,7 +80,7 @@
 
 <div class="col-12 col-md-6">
 
-    <button class="button ">Read</button><br>
+    <button class="button ">Blog</button><br>
     <hr>
 
 
