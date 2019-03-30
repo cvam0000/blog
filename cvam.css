@@ -92,34 +92,28 @@ body {
   margin: 0;
   padding: 3%;
   overflow: hidden;
-  background-color: #333;
+  
 }
 
 li {
   float: left;
   padding:10px;
+  
 }
 
 li a {
   display: block;
-  color: white;
+  color:black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #111;
-}
 
 
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-a, a:hover {
-	color: #000;
-	text-decoration: none;
-	padding: 5px;
-}
+
 
 .socialbtnsbtnsbtns, .socialbtnsbtnsbtns ul, .socialbtnsbtnsbtns li {
 	margin: 0;
@@ -185,8 +179,9 @@ a, a:hover {
 }
 
 .pagination{
+  color:black;
 
-}s
+}
 
 
 
