@@ -27,6 +27,78 @@
   50% {background-position: 100% 50%;}
   100% {background-position: 0% 50%;}
   }
+
+  @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
+a, a:hover {
+	color: #000;
+	text-decoration: none;
+	padding: 5px;
+}
+
+.socialbtnsbtnsbtns, .socialbtnsbtnsbtns ul, .socialbtnsbtnsbtns li {
+	margin: 0;
+	padding: 5px;
+}
+
+.socialbtnsbtnsbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns li {
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.socialbtns .fa {
+	color: #FFF;
+	text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-webkit-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-moz-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	-o-text-shadow: 1px 1px 0px #000,
+			1px -1px 0px #000,
+			-1px 1px 0px #000,
+			-1px -1px 0px #000;
+	transition: all ease-out 0.5s;
+	-moz-transition: all ease-out 0.5s;
+	-webkit-transition: all ease-out 0.5s;
+	-o-transition: all ease-out 0.5s;
+}
+
+.socialbtns .fa:hover {
+	color: #000;
+	text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-webkit-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-moz-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	-o-text-shadow: 1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px 1px 0px #fff,
+			-1px -1px 0px #fff;
+	transition: all ease 0.5s;
+	-moz-transition: all ease-in 0.5s;
+	-webkit-transition: all ease-in 0.5s;
+	-o-transition: all ease-in 0.5s;
+}
+
   </style>
 <body>
         
@@ -34,30 +106,43 @@
     <div class="row">
         <div class="col-12 col-md-4"></div>
       <div class="col-12 col-md-3">
-        <center>   <ul class="il">
-
-                <img width="50px"src="logo.png">
-                <li><a class="active" href="#home"><i class="fa fa-home" style="font-size:24px"></i></a></li>
-                <li><a href="#news"><i class="fa fa-code" style="font-size:24px"></i></a></li>
-                <li><a href="#contact"><i class="fa fa-address-book" style="font-size:24px"></i></a></li>
-                <li><a href="#about"><i class="fa fa-comments" style="font-size:24px"></i></a></li>
-               
-                
-                
-              </ul></center>
+        
+       
               <br><br>
             </div>
            
               
               <!-- Page Content -->
               <div class="container">
+                  <ul class="il">
+
+                      
+                      <li><a class="active" href="#home"><i class="fa fa-home" style="font-size:24px"></i></a></li>
+                      <li><a href="#news"><i class="fa fa-code" style="font-size:24px"></i></a></li>
+                      <li><a href="#contact"><i class="fa fa-address-book" style="font-size:24px"></i></a></li>
+                      <li><a href="#about"><i class="fa fa-comments" style="font-size:24px"></i></a></li>
+                     
+                      
+                      
+                    </ul>
                 <div class="card border-0 shadow my-5">
                   <div class="card-body p-5">
-                    <h1 class="font-weight-light">Fixed Full Page Background Image</h1>
+                    
+                    <h1 class="font-weight-light"><img width="90px"src="logo.png"> Introduction to RTOS</h1>
                     <p class="lead">In this snippet, the background image is fixed to the body element. Content on the page will scroll, but the image will remain in a fixed position!</p>
                     <p class="lead">Scroll down...</p>
                     <div style="height: 700px"></div>
-                    <p class="lead mb-0">You've reached the end!</p>
+                    <p class="lead mb-0"><div align="center" class="socialbtns">
+                        <ul>
+                        <li><a href="#" class="fa fa-lg fa-facebook"></a></li>
+                        <li><a href="#" class="fa fa-lg fa-twitter"></a></li>
+                        <li><a href="#" class="fa fa-lg fa-github"></a></li>
+                        <li><a href="#" class="fa fa-lg fa-linkedin"></a></li>
+                        <li><a href="#" class="fa fa-lg fa-instagram"></a></li>
+                        
+                        </ul>
+                        </div>
+                        </p>
                   </div>
                 </div>
               </div>
