@@ -90,22 +90,26 @@
   
 <br>
 
-    <div class="card w-100">
+{% for post in posts %}
+    
+
+ <div class="card w-100">
         <div class="card-body">
-          <p class="card-title"><h5># Embedded operating systems </h5>  <small> <i class="fa fa-clock-o" aria-hidden="true"></i> 23, march 23:30 </small>      <span class="badge badge-dark">5 min read</span>
+          <p class="card-title"><h5># {{ post.title }} </h5>  <small> <i class="fa fa-clock-o" aria-hidden="true"></i> published: {{ post.published_date }} 23:30 </small>      <span class="badge badge-dark">5 min read</span>
             <span class="badge badge-secondary">#RTOS</span>
             <span class="badge badge-secondary">#Linux</span>
             <span class="badge badge-secondary">#Embedded divices</span>
          
 
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="button">Read</a>
+          <p class="card-text">{{ post.text|linebreaksbr }}</p>
+          <a href="{% url 'post_detail' pk=post.pk %}"  class="button">Read</a>
         </div></div>
+        <br>
+ {% endfor %}
+
   
 
-  <br>
-
-  <div class="card w-100">
+  <!--<div class="card w-100">
       <div class="card-body">
         <h5 class="card-title"># Embedded operating systems </h5>
         <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -128,7 +132,7 @@
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="button">Read</a>
     </div></div>
-<br>
+<br>-->
 
 <ul class="pagination">
     <li><a href="#">1</a></li>
@@ -159,18 +163,13 @@
         </tr>
     </thead>
     <tbody>
+        {% for post in posts %}
       <tr>
-        <td>Introduction to RTOS</td>
+        <td># {{ post.title }}</td>
        
       </tr>
-      <tr>
-        <td>Cortex ARM 7</td>
-        
-      </tr>
-      <tr>
-        <td>AVR Microcontrollers</td>
-        
-      </tr>
+      {% endfor %}
+      
     </tbody>
   </table></div>
 
