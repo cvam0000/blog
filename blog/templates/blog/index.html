@@ -29,7 +29,7 @@
 
 <div class="container-fluid">
   <div class="row">
-
+    <div class="col-12 col-md-1"></div> 
       <div class="col-12 col-md-3">
           <div class="card w-100">
             <div class="card-body">
@@ -87,7 +87,7 @@
             
    
 
-<div class="col-12 col-md-6">
+<div class="col-12 col-md-5">
 
     <button class="button ">Blog</button><br>
     <hr>
@@ -103,12 +103,13 @@
  <div class="card w-100">
         <div class="card-body">
           <p class="card-title"><h5># {{ post.title }} </h5>  <small> <i class="fa fa-clock-o" aria-hidden="true"></i> published: {{ post.published_date }} 23:30 </small>      <span class="badge badge-dark">5 min read</span>
+            <br>
             <span class="badge badge-secondary">#RTOS</span>
             <span class="badge badge-secondary">#Linux</span>
             <span class="badge badge-secondary">#Embedded divices</span>
          
 
-          <p class="card-text">{{ post.text|linebreaksbr }}</p>
+          <p class="card-text"></p>
           <a href="{% url 'article' pk=post.pk %}"  class="button">Read</a>
         </div></div>
         <br>

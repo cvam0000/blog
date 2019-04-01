@@ -13,7 +13,7 @@ class Post(models.Model):
     published_date = models.DateTimeField(blank=True, null=True)
     text = models.TextField()
     tag = models.CharField(null=True, max_length=100)
-    slug = models.SlugField(unique=True)
+    
 
 
     def publish(self):
@@ -26,8 +26,4 @@ class Post(models.Model):
 
     
 
-    def save(self, *args, **kwargs):
-        self.slug = slugify(self.title)
-        super(Article, self).save(*args, **kwargs)
- 
    
