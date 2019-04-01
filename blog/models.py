@@ -2,6 +2,8 @@
 from django.conf import settings
 from django.db import models
 from django.utils import timezone
+from django.template.defaultfilters import slugify
+
 
 
 class Post(models.Model):
@@ -11,6 +13,7 @@ class Post(models.Model):
     published_date = models.DateTimeField(blank=True, null=True)
     text = models.TextField()
     tag = models.CharField(null=True, max_length=100)
+    slug = models.SlugField(default='')
 
 
     def publish(self):
@@ -19,5 +22,10 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Article(models.Model):
+  def get_absolute_url(self):
+        return reverse('article', kwargs={'slug': self.slug, 'id':self.id})
  
    
