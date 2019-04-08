@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title>cvam</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<style>
         body {
 			background: #eae8e7;
@@ -12,7 +17,7 @@
 		}
 		
 		.sidebar {
-			width:30%;
+			
 			display: inline-block;
 			margin-left: 10%;
 			background: #5da4d9;
@@ -55,7 +60,7 @@
 		}
 
 		.content {
-			width: 48%;
+			
 			margin-left: 2%;
 			display: inline-block;
 			vertical-align: top;
@@ -82,17 +87,24 @@
 			color: #5da4d9;
 			font-size:12px;
 		}
-
+h1{
+	font-size: 50px;
+}
+	
     </style>
   
 <body>
-	<div class="container">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12 col-md-4">
 		<div class="sidebar">
 			<div class="sidebar-top">
-				<img class="profile-image" src="http://demo.deviserweb.com/cv/assets/images/profile-img.jpg" />
+				<img class="profile-image" src="https://raw.githubusercontent.com/cvam0000/qwerty/master/pics/cvam1.jpg" />
 				<div class="profile-basic">
-					<h1 class="name">Shivam Chaudhary</h1>
-					<h4 class="designation"> Embedde Engineer / Full stack web developer </h4>
+				
+					<span class="badge badge-danger"><h3>Shivam Chaudhary</h3></span><br>
+					<h1><span class="badge badge-danger"><h4>Embedde Engineer / Full stack web developer</h4></span><br></h3>
+					<h4 class="designation">  </h4>
 				</div>
 			</div>
 			<div class="profile-info">
@@ -119,13 +131,16 @@
 			</div>
 
 			<div class="profile-info">
-				<a class="social-media" href="https://facebook.com/anupama.panchal" target="_blank" >Facebook</a>
-				<a class="social-media" href="https://facebook.com/anupama.panchal" target="_blank" >Linkedin</a>
-				<a class="social-media" href="https://facebook.com/anupama.panchal" target="_blank" >Twitter</a>
-				<a class="social-media" href="https://facebook.com/anupama.panchal" target="_blank" >Instagram</a>
+				<a class="social-media" href="" target="_blank" >Facebook</a>
+				<a class="social-media" href="" target="_blank" >Linkedin</a>
+				<a class="social-media" href="" target="_blank" >Twitter</a>
+				<a class="social-media" href="" target="_blank" >Instagram</a>
 			</div>
 		</div>
+	</div>
 
+
+	<div class="col-12 col-md-8">
 		<div class="content">
 			<div class="work-experience">
 				<h1 class="heading"> Work Experience</h1>
@@ -168,8 +183,10 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
+				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </body>
 </html>
