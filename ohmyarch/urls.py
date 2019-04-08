@@ -19,4 +19,5 @@ from django.urls import path ,include
 urlpatterns = [
     path('ardu/', admin.site.urls),
     path('',include('blog.urls')),
+    path('cv/',include('cv.urls')),
 ]
